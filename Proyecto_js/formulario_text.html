@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    
+    <h4>Acceso de usuarios</h4> <br>
+
+<form >
+    Ingrese Usuarios: <br>
+    <input type="text" id="usuario">
+
+    <br><br><br>
+
+    Ingrese Clave: <br>
+    <input type="password" id="clave">
+
+    <br><br>
+
+<input type="button" value="Ingresar" onclick="verificar()">
+
+</form>
+
+<script>
+
+    let control = 0;
+    let contrasenia = 'acceso01';
+
+    function verificar(){
+
+    let clave = document.getElementById('clave').value;
+    if(clave != contrasenia || clave ==""){      
+        alert('Clave incorecta o vacia intente de nuevo');
+        control++;
+        if (control >=3) {
+            alert('Intentos agotados por bruto \ Llame al administrador');
+            
+        }
+    
+    }else{
+        window.open("http://www.google.com");
+
+    }
+
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "nombre":"Esteban Rojas",
+    "Edad": 27,
+    "Estudiante": false,
+    "direccion":{
+      "calle":"Calle 46a",
+      "ciudad":"Guarne"
+    },
+    "telefonos": [
+      "123-456-789",
+      "85445"
+    ]
+  
+  }
+  

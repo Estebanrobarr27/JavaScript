@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  
+    <h5>Comentarios</h5>
+
+    <form>
+<p> <textarea id="comentarios" cols="40" rows="20"></textarea></p>
+<input type="button" value="Enviar" onclick="comentar()">
+
+
+
+
+
+    </form>
+
+
+    <script>
+    
+    let area = document.getElementById('comentarios');
+    area.style.resize="none";
+    
+    function comentar() {
+    if (document.getElementById('comentarios').value.length > 100) {
+        
+        swal('Creo que invento mucho');
+    } else {
+        swal('Gracias');
+    }
+
+}
+    
+    
+    
+    
+    </script>
+
+
+    
+</body>
+</html>

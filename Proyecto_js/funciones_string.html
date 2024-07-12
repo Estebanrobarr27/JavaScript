@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let Palabra = 'JavaScript';
+
+
+document.write('La pálabra es: ', Palabra);
+document.write('<br>');
+
+
+
+//Contar la cantidad de letras
+document.write('La cantidad de letras: ', Palabra.length);
+document.write('<br>');
+
+
+
+document.write('Las primeras 4 letras: ', Palabra.slice(0,4));
+document.write('<br>');
+
+
+// Cambiar valores en un texto
+
+let saludo = 'Hola a todos';
+
+saludo = saludo.replace('Hola','Adios');
+document.write(saludo);
+document.write('<br>');
+
+
+document.write('En mayusculas', saludo.toUpperCase());
+document.write('<br>');
+
+document.write('En mayusculas', saludo.toLowerCase());
+document.write('<br>');
+
+
+// Unir texto
+
+
+let palabra2 = 'Curso de';
+document.write('Unir Palabras: ', palabra2.concat(Palabra));
+document.write('<br>');
+
+
+
+// Cortar Texto
+
+document.write(Palabra.split('Java'));
+
+
+
+
+
+    </script>
+</body>
+</html>
